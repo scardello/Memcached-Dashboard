@@ -1,6 +1,28 @@
 Memchaced Dashboard
 ===================
 
+Q&D Setup & Start
+-----------------
+
+1. Clone repo:
+
+```git clone https://github.com/scardello/Memcached-Dashboard.git```
+
+2. Asegurarse de levantar memcached localmente y ejecutando en el puerto por defecto (11211)
+
+3. Levantar el docker con el server:
+```
+> cd Memcached-Dashboard
+> docker-compose up
+```
+
+Si se desea levantar el servicio en 2do plano utilizar la opción -d (`docker-compose up -d`). Para más info de como ejecutar/detener/eliminar/etc ir a [el README del docker](phpdocker/README.md) 
+
+4. Finalmente ingresar al servicio en [localhost:9000](http://localhost:9000) con el user:admin y pass:admin
+
+Original Info
+-------------
+
 A dead simple single file Memcached stats dashboard in PHP. The dashboard shows a few basic stats on the configured server and allows to delete/set keys and flush all data.
 All assets (CSS ans JavaScript) are loaded from CDN's.
 
